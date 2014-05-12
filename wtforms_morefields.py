@@ -53,7 +53,7 @@ class FieldDict(FieldList):
                 self._add_entry(formdata, obj_data, index=index)
 
         else:
-            for index, obj_data in data.items():
+            for index, obj_data in sorted(data.items()):
                 self._add_entry(formdata, obj_data, index)
 
     def _extract_indices(self, prefix, formdata):
